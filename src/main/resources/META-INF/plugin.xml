@@ -50,20 +50,18 @@
 
     <change-notes><![CDATA[
         <pre style="font-family: sans-serif">
-NEW: Plugin name change: CSV
-FIX: Null pointer when using csv rendering in Markdown documentation #292
-FIX: NullPointerException on startup #295
+FIX: Plugin not showing column at caret Ctr+F1 #300
+FIX: Past few versions of this plugin don't show colors #298
       </pre>
     ]]>
     </change-notes>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
-    <idea-version since-build="201" />
+    <idea-version since-build="2020.1" />
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->
     <depends>com.intellij.modules.lang</depends>
-    <depends optional="true" config-file="withGithub.xml">org.jetbrains.plugins.github</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <fileType name="CSV" language="csv" implementationClass="net.seesharpsoft.intellij.plugins.csv.CsvFileType" extensions="csv" fieldName="INSTANCE"/>
